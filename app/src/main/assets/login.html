@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Scooter Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Welcome to Safar Portal</h2>
+    <div class="tab-buttons">
+        <button id="loginTab" onclick="showLogin()">Login</button>
+        <button id="signupTab" onclick="showSignup()">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" onsubmit="submitLogin(event)">
+        <input type="text" id="loginName" placeholder="Enter Name" required>
+        <input type="email" id="loginEmail" placeholder="Enter Email" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" onsubmit="submitSignup(event)" style="display: none;">
+        <input type="text" id="signupName" placeholder="Enter Name" required>
+        <input type="email" id="signupEmail" placeholder="Enter Email" required>
+        <input type="password" id="signupPassword" placeholder="Enter Password" required>
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

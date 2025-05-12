@@ -19,16 +19,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
+        
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDM6btlmInYhEJ1bJtsfeD8jx00LB8W5s0" />
+            
         <activity
-            android:name=".MainActivity"
+            android:name=".MapsActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MapsActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".WebViewActivity" />
 
 
